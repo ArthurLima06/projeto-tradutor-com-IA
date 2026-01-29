@@ -1,0 +1,47 @@
+/* 
+principais coisas que precisa saber sobre o CSS:
+1. Seletores: Usados para selecionar os elementos HTML que você deseja estilizar.
+2. Propriedades e Valores: Cada propriedade CSS tem um valor que define como o estilo deve ser aplicado.
+3. Cascata e Herança: Regras que determinam como os estilos são aplicados quando há conflitos.
+exemplos: 
+seletor:
+button, p, div...
+propriedade: 
+background-color: blue; /* Define a cor de fundo do botão como azul
+background-color: blue; /* Cor de fundo azul */
+   /*  color: white;           /* Cor do texto branca */
+    /* padding: 10px 20px;    /* Espaçamento interno */
+   /*  border: none;          /* Sem borda */
+    /* border-radius: 5px;    /* Bordas arredondadas */
+   /*  cursor: pointer;       /* Cursor de ponteiro ao passar o mouse */
+     /*font-size: 16px;       Tamanho da fonte */
+ /*valores: 
+red, 16px, solid, none...
+pixel: unidade de medida em CSS, representando um ponto na tela.
+classe: serve para diferenciar os elementos HTML, permitindo aplicar estilos específicos a grupos de elementos.
+sempre vai na tag de abertura do elemento HTML, precedida por um ponto (.)
+exemplo: <button class="meu-botao">Clique aqui</button>
+
+Propriedades CSS comuns:
+- MARGEM: ESPAÇO FORA DO ELEMENTO
+- PADDING: ESPAÇO DENTRO DO ELEMENTO
+- BORDER: BORDA DO ELEMENTO
+- WIDTH: LARGURA DO ELEMENTO
+- HEIGHT: ALTURA DO ELEMENTO
+- DISPLAY: COMO O ELEMENTO SE COMPORTA NA PÁGINA
+- BACKGROUND-COLOR: COR DE FUNDO
+- COLOR: COR DO TEXTO
+- FONT-FAMILY: FONTE DO TEXTO
+- FONT-SIZE: TAMANHO DA FONTE
+- TEXT-ALIGN: ALINHAMENTO DO TEXTO
+- FONT-WEIGHT: ESPESSURA DA FONTE
+- BORDER-RADIUS: ARREDONDAR CANTOS
+- BOX-SHADOW: SOMBRA DO ELEMENTO
+- CURSOR: FORMATO DO CURSOR
+- HOVER: EFEITO AO PASSAR O MOUSE
+- POSITION: POSIÇÃO DO ELEMENTO NA PÁGINA
+- FLEXBOX: LAYOUT FLEXÍVEL
+- GRID: LAYOUT EM GRADE
+- MEDIA QUERIES: ESTILOS PARA DIFERENTES TELAS
+
+*/
