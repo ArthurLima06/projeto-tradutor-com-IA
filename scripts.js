@@ -39,18 +39,20 @@ json - formato de dados mais amigável
 // pegando o texto dentro do text area
 let inputTexto = document.querySelector(".input-texto")
 let traducao = document.querySelector(".tradução")
+let idioma = document.querySelector(".idioma")
 
 async function traduzir(){
     //endereço do servidor com o texto que eu quero traduzir
     let endereco  = "https://api.mymemory.translated.net/get?q=" 
     + inputTexto.value
     + "&langpair=pt-BR|en"
+    + idioma.value
     //resposta do servidor
     let resposta = await fetch(endereco)
     //converto a resposta para um formato amigável (json)
     let dados = await resposta.json()
 
-    traducao.innerHTML = dados.responseData.translatedText
+    traducao.textContent = dados.responseData.translatedText
 
     console.log(dados)
 }
