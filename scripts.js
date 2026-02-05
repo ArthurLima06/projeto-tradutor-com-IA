@@ -16,7 +16,7 @@ exmeplo:
 [x]colocar o texto na tela
 
 fase 2
-[]Escolher o idioma
+[x]Escolher o idioma
 []traduzir pelo microfone (captar a voz) / IA
 [] colocar o site no ar 
 
@@ -54,8 +54,26 @@ async function traduzir(){
 
     traducao.textContent = dados.responseData.translatedText
 
-    console.log(dados)
 }
 
+function ouvirVoz(){
+    //ferramenta de trasncrição de áudio
+    let voz = window.webkitSpeechRecognition 
+    //deixando ela PRONTA para usar
+    let reconhecimentovoz = new voz()
+    //configurando a ferramenta 
+    reconhecimentovoz.lang = "pt-BR"
+
+    reconhecimentovoz.onresult = (evento) => {
+
+        let textoTranscricao = evento.results[0][0].transcript
+
+        inputTexto.textContent = textoTranscricao
+
+        traduzir()
+    }
+
+    reconhecimentovoz.start()
+}
 //clicou no botão -> chama a função -> monto o endereço
 //-> chamo o servidor -> peço para esperar -> responde
